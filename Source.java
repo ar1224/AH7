@@ -15,9 +15,7 @@ class Source {
   public static int sumList(Node<Integer> head) {
     // todo
     int sum=0;
-      List<String> arr = new ArrayList<>();
       while(head != null){
-        //arr.add(head.val);
         sum += head.val;
         head = head.next;
       }
