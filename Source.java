@@ -34,9 +34,24 @@ class Source {
     c.next = d;
     d.next = e;
 
+    Node<Integer> v = new Node<>(5);
+    Node<Integer> w = new Node<>(4);
+    Node<Integer> x = new Node<>(3);
+    Node<Integer> y = new Node<>(-2);
+    Node<Integer> z = new Node<>(1);
+    
+    v.next = w;
+    w.next = x;
+    x.next = y;
+    y.next = z;
+
+
     // 2 -> 8 -> 3 -> -1 -> 7
     
     System.out.println("Sum of my list: ");
     System.out.println(Source.sumList(a));
+
+    System.out.println("Sum of my list: ");
+    System.out.println(Source.sumList(v));
   }
 }
